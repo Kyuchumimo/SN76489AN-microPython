@@ -284,7 +284,7 @@ class Music76489:
 
     def _play_note(self, voice: int, note: int, octave: int) -> None:
         # Initial note C0:
-        # https://pages.mtu.edu/~suits/notefreqs.html
+        # https://www.liutaiomottola.com/formulae/freqtab.htm
         note_c0 = 16.35
         distance = octave * 12 + note
         freq = note_c0 * (2 ** (distance / 12))
